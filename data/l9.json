@@ -1,0 +1,19 @@
+{
+  "active_count": 0,
+  "paper_count": 0,
+  "promoted_count": 0,
+  "retired_count": 0,
+  "rejected_count": 0,
+  "active_strategies": [],
+  "portfolio": {
+    "equity": 10000,
+    "starting": 10000,
+    "roi_pct": 0.0,
+    "open_trades": 0,
+    "total_trades": 0,
+    "win_rate": null,
+    "equity_history": [],
+    "recent_trades": [],
+    "open_positions": []
+  }
+}
