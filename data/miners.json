@@ -1,0 +1,110 @@
+{
+  "metal": "MINERS",
+  "label": "Gold Miners",
+  "etf": "GDX",
+  "icon": "\u26cf",
+  "price": 85.55,
+  "change_24h": -2.84,
+  "levels": {
+    "support": [
+      85.44,
+      85.05,
+      85.02
+    ],
+    "resistance": [
+      85.64,
+      86.32,
+      86.36
+    ]
+  },
+  "verdict": "AVOID",
+  "score": -3.5,
+  "summary": "Miners shows a mixed EMA structure \u2014 no clear directional bias yet. RSI at 43.7 \u2014 momentum is neutral. Dollar is broadly flat \u2014 limited macro catalyst from DXY. Macro regime: NEUTRAL.",
+  "moomoo": {
+    "action": "Avoid GDX.",
+    "note": null,
+    "avoid": "Macro and technical signals both negative. Stand aside."
+  },
+  "tf_table": [
+    {
+      "tf": "daily",
+      "ema_stack": "mixed",
+      "rsi": 43.7,
+      "rsi_label": "neutral",
+      "macd": "bearish",
+      "volume": "low",
+      "bb_pct": 0.273
+    },
+    {
+      "tf": "4h",
+      "ema_stack": "bearish",
+      "rsi": 43.3,
+      "rsi_label": "neutral",
+      "macd": "bullish",
+      "volume": "normal",
+      "bb_pct": 0.301
+    },
+    {
+      "tf": "1h",
+      "ema_stack": "bearish",
+      "rsi": 40.7,
+      "rsi_label": "neutral",
+      "macd": "bearish",
+      "volume": "low",
+      "bb_pct": 0.169
+    }
+  ],
+  "signals": {
+    "daily": {
+      "close": 85.55000305175781,
+      "ema20": 88.5337,
+      "ema50": 91.024,
+      "ema200": 84.0979,
+      "rsi": 43.7,
+      "rsi_label": "neutral",
+      "macd": "bearish",
+      "macd_val": -1.5711,
+      "ema_stack": "mixed",
+      "volume": "low",
+      "vol_ratio": 0.29,
+      "bb_pct": 0.273,
+      "atr": 3.5153,
+      "week52_pct": 53.7,
+      "mom_30d": -8.0
+    },
+    "4h": {
+      "close": 85.54000091552734,
+      "ema20": 87.4959,
+      "ema50": 89.1778,
+      "ema200": 95.0867,
+      "rsi": 43.3,
+      "rsi_label": "neutral",
+      "macd": "bullish",
+      "macd_val": -0.6711,
+      "ema_stack": "bearish",
+      "volume": "normal",
+      "vol_ratio": 0.77,
+      "bb_pct": 0.301,
+      "atr": 2.2577,
+      "week52_pct": 21.9,
+      "mom_30d": -9.4
+    },
+    "1h": {
+      "close": 85.54000091552734,
+      "ema20": 86.9705,
+      "ema50": 87.1979,
+      "ema200": 89.5801,
+      "rsi": 40.7,
+      "rsi_label": "neutral",
+      "macd": "bearish",
+      "macd_val": -0.2534,
+      "ema_stack": "bearish",
+      "volume": "low",
+      "vol_ratio": 0.25,
+      "bb_pct": 0.169,
+      "atr": 1.0083,
+      "week52_pct": 10.1,
+      "mom_30d": -0.51
+    }
+  }
+}

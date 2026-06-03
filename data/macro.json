@@ -1,0 +1,23 @@
+{
+  "dxy": 99.43,
+  "dxy_trend": "flat",
+  "dxy_10d_chg": 0.32,
+  "tnx": 4.49,
+  "tnx_trend": "flat",
+  "tlt": 85.16,
+  "tlt_trend": "flat",
+  "tlt_10d_chg": 1.89,
+  "vix": 16.1,
+  "vix_trend": "flat",
+  "spy_trend": "bullish",
+  "spy_price": 755.29,
+  "gold_spot": 4470.1,
+  "silver_spot": 73.7,
+  "gs_ratio": 60.7,
+  "regime": {
+    "label": "NEUTRAL",
+    "desc": "No strong macro catalyst. Technicals and momentum drive near-term price.",
+    "gold_bias": "neutral",
+    "silver_bias": "neutral"
+  }
+}

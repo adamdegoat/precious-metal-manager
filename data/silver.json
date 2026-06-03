@@ -1,0 +1,110 @@
+{
+  "metal": "SILVER",
+  "label": "Silver",
+  "etf": "SLV",
+  "icon": "\u25c8",
+  "price": 66.49,
+  "change_24h": -2.21,
+  "levels": {
+    "support": [
+      66.37,
+      66.01,
+      65.94
+    ],
+    "resistance": [
+      67.99,
+      68.29,
+      68.36
+    ]
+  },
+  "verdict": "AVOID",
+  "score": -3.85,
+  "summary": "Silver shows a mixed EMA structure \u2014 no clear directional bias yet. RSI at 43.1 \u2014 momentum is neutral. Dollar is broadly flat \u2014 limited macro catalyst from DXY. Gold/Silver ratio at 60.7 \u2014 silver is outperforming, momentum favors silver. Macro regime: NEUTRAL.",
+  "moomoo": {
+    "action": "Avoid SLV.",
+    "note": null,
+    "avoid": "Macro and technical signals both negative. Stand aside."
+  },
+  "tf_table": [
+    {
+      "tf": "daily",
+      "ema_stack": "mixed",
+      "rsi": 43.1,
+      "rsi_label": "neutral",
+      "macd": "bearish",
+      "volume": "low",
+      "bb_pct": 0.235
+    },
+    {
+      "tf": "4h",
+      "ema_stack": "bearish",
+      "rsi": 38.6,
+      "rsi_label": "weak",
+      "macd": "bearish",
+      "volume": "normal",
+      "bb_pct": 0.0
+    },
+    {
+      "tf": "1h",
+      "ema_stack": "bearish",
+      "rsi": 33.4,
+      "rsi_label": "weak",
+      "macd": "bearish",
+      "volume": "low",
+      "bb_pct": 0.0
+    }
+  ],
+  "signals": {
+    "daily": {
+      "close": 66.48999786376953,
+      "ema20": 69.1455,
+      "ema50": 69.7629,
+      "ema200": 61.3797,
+      "rsi": 43.1,
+      "rsi_label": "neutral",
+      "macd": "bearish",
+      "macd_val": -0.7496,
+      "ema_stack": "mixed",
+      "volume": "low",
+      "vol_ratio": 0.33,
+      "bb_pct": 0.235,
+      "atr": 2.2804,
+      "week52_pct": 47.3,
+      "mom_30d": -2.92
+    },
+    "4h": {
+      "close": 66.48999786376953,
+      "ema20": 68.5562,
+      "ema50": 69.4584,
+      "ema200": 72.8953,
+      "rsi": 38.6,
+      "rsi_label": "weak",
+      "macd": "bearish",
+      "macd_val": -0.8444,
+      "ema_stack": "bearish",
+      "volume": "normal",
+      "vol_ratio": 0.95,
+      "bb_pct": 0.0,
+      "atr": 1.3499,
+      "week52_pct": 28.1,
+      "mom_30d": -12.93
+    },
+    "1h": {
+      "close": 66.48999786376953,
+      "ema20": 67.6778,
+      "ema50": 68.2136,
+      "ema200": 69.5862,
+      "rsi": 33.4,
+      "rsi_label": "weak",
+      "macd": "bearish",
+      "macd_val": -0.3251,
+      "ema_stack": "bearish",
+      "volume": "low",
+      "vol_ratio": 0.26,
+      "bb_pct": 0.0,
+      "atr": 0.6114,
+      "week52_pct": 12.4,
+      "mom_30d": -1.47
+    }
+  }
+}
