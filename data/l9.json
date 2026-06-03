@@ -1,10 +1,19 @@
 {
-  "active_count": 0,
-  "paper_count": 0,
+  "active_count": 1,
+  "paper_count": 1,
   "promoted_count": 0,
   "retired_count": 0,
-  "rejected_count": 0,
-  "active_strategies": [],
+  "rejected_count": 2,
+  "active_strategies": [
+    {
+      "id": "pmm_20260604_003",
+      "name": "GDX EMA Stack Momentum Follow",
+      "family": "momentum_continuation",
+      "asset": "MINERS",
+      "status": "paper",
+      "promoted_at": "2026-06-04"
+    }
+  ],
   "portfolio": {
     "equity": 10000,
     "starting": 10000,
@@ -12,7 +21,12 @@
     "open_trades": 0,
     "total_trades": 0,
     "win_rate": null,
-    "equity_history": [],
+    "equity_history": [
+      {
+        "date": "2026-06-04",
+        "equity": 10000
+      }
+    ],
     "recent_trades": [],
     "open_positions": []
   }
