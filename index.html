@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Precious Metal Manager — Gold, Silver &amp; Miners Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-icon">🪙</span>
+        <div>
+          <span class="brand-name">Precious Metal Manager</span>
+          <span class="brand-tag">Gold · Silver · Miners · Moomoo-ready signals</span>
+        </div>
+      </div>
+      <div class="header-meta">
+        <div class="update-pill" id="update-pill">
+          <span class="pulse-dot"></span>
+          <span id="update-text">Loading...</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+    <!-- STATUS BAR -->
+    <div class="status-bar">
+      <div class="status-updated">
+        <span class="status-dot">&#9679;</span>
+        <div>
+          <div class="status-ts-main" id="status-ts-main">—</div>
+          <div class="status-ts-sub"  id="status-ts-sub">—</div>
+        </div>
+      </div>
+      <div class="status-cycles">
+        <span class="cycles-val" id="status-cycles">—</span>
+        <span class="cycles-lbl">runs today</span>
+      </div>
+      <div class="status-cadence">
+        Refreshes <strong>every 4 hours</strong><br/>
+        <span style="font-size:11px;color:#4a6068;">Signals from GLD · SLV · GDX via yfinance</span>
+      </div>
+    </div>
+
+    <!-- MACRO DRIVERS PANEL -->
+    <section class="macro-panel">
+      <h2 class="panel-title">
+        Macro Drivers
+        <span class="panel-subtitle">What moves precious metals</span>
+      </h2>
+
+      <!-- Regime banner -->
+      <div class="regime-banner" id="regime-banner">
+        <div class="card-loading"><div class="spinner"></div></div>
+      </div>
+
+      <!-- Macro metric cards -->
+      <div class="macro-grid">
+        <div class="macro-card" id="macro-dxy">
+          <div class="card-loading"><div class="spinner"></div></div>
+        </div>
+        <div class="macro-card" id="macro-tnx">
+          <div class="card-loading"><div class="spinner"></div></div>
+        </div>
+        <div class="macro-card" id="macro-tlt">
+          <div class="card-loading"><div class="spinner"></div></div>
+        </div>
+        <div class="macro-card" id="macro-vix">
+          <div class="card-loading"><div class="spinner"></div></div>
+        </div>
+        <div class="macro-card" id="macro-gs">
+          <div class="card-loading"><div class="spinner"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METAL CARDS -->
+    <section class="metals-grid">
+      <div class="metal-card gold-card" id="card-GOLD">
+        <div class="card-loading"><div class="spinner"></div></div>
+      </div>
+      <div class="metal-card silver-card" id="card-SILVER">
+        <div class="card-loading"><div class="spinner"></div></div>
+      </div>
+      <div class="metal-card miners-card" id="card-MINERS">
+        <div class="card-loading"><div class="spinner"></div></div>
+      </div>
+    </section>
+
+    <!-- SIGNAL BREAKDOWN -->
+    <section class="panel">
+      <h2 class="panel-title">
+        Signal Breakdown
+        <span class="panel-subtitle">Multi-timeframe · technical indicators</span>
+      </h2>
+      <div class="signal-tabs" id="signal-tabs">
+        <div class="card-loading"><div class="spinner"></div></div>
+      </div>
+      <div id="signal-content">
+      </div>
+    </section>
+
+    <!-- DISCLAIMER -->
+    <section class="panel disclaimer">
+      <p>
+        <strong>Disclaimer:</strong> Precious Metal Manager is an automated signal intelligence tool for GLD,
+        SLV, and GDX — ETFs accessible on Moomoo. All information is for informational purposes only and does not
+        constitute financial advice. Past signals do not guarantee future results. Precious metals are volatile and
+        macro-sensitive. Always conduct your own research before making investment decisions.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>Precious Metal Manager &copy; 2026</span>
+    <span class="footer-sep">·</span>
+    <a href="https://adamdegoat.github.io" target="_blank">Developer Hub</a>
+    <span class="footer-sep">·</span>
+    <a href="https://adamdegoat.github.io/fund-manager" target="_blank">Fund Manager</a>
+    <span class="footer-sep">·</span>
+    <a href="https://adamdegoat.github.io/equity-manager" target="_blank">Equity Manager</a>
+  </footer>
+
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
