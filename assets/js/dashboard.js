@@ -309,16 +309,156 @@ function switchTab(key) {
   if (panel) panel.classList.add('active');
 }
 
+// ── Render L9 panel ───────────────────────────────────────────
+
+function renderL9(l9) {
+  const el = document.getElementById('l9-grid');
+  if (!el || !l9) return;
+
+  const p = l9.portfolio || {};
+  const roiColor = (p.roi_pct || 0) >= 0 ? 'var(--green)' : 'var(--red)';
+  const roiSign  = (p.roi_pct || 0) >= 0 ? '+' : '';
+
+  const familyBadge = s => {
+    const colors = {
+      macro_regime_shift:   '#f5c842',
+      dxy_reversal:         '#4a9eff',
+      rsi_oversold_bounce:  '#00d4aa',
+      vix_spike_recovery:   '#ff8c42',
+      gs_ratio_trade:       '#c0cdd4',
+      momentum_continuation:'#a78bfa',
+      yield_compression:    '#34d399',
+    };
+    const color = colors[s.family] || '#7a9098';
+    return `<span style="font-size:10px;padding:2px 7px;border-radius:8px;background:${color}22;color:${color};font-weight:600;">${s.family.replace(/_/g,' ')}</span>`;
+  };
+
+  el.innerHTML = `
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px;">
+      <div style="background:var(--bg-card-2);border:1px solid var(--border);border-radius:8px;padding:14px;text-align:center;">
+        <div style="font-size:28px;font-weight:700;color:var(--gold)">${l9.active_count}</div>
+        <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.6px">Active</div>
+      </div>
+      <div style="background:var(--bg-card-2);border:1px solid var(--border);border-radius:8px;padding:14px;text-align:center;">
+        <div style="font-size:28px;font-weight:700;color:var(--green)">${l9.promoted_count}</div>
+        <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.6px">Promoted</div>
+      </div>
+      <div style="background:var(--bg-card-2);border:1px solid var(--border);border-radius:8px;padding:14px;text-align:center;">
+        <div style="font-size:28px;font-weight:700;color:var(--text-dim)">${l9.retired_count}</div>
+        <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.6px">Retired</div>
+      </div>
+      <div style="background:var(--bg-card-2);border:1px solid var(--border);border-radius:8px;padding:14px;text-align:center;">
+        <div style="font-size:28px;font-weight:700;color:var(--text-dim)">${l9.rejected_count}</div>
+        <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.6px">Rejected</div>
+      </div>
+    </div>
+
+    ${(l9.active_strategies || []).length > 0 ? `
+    <div style="margin-bottom:20px;">
+      <div style="font-size:11px;text-transform:uppercase;letter-spacing:.7px;color:var(--text-muted);margin-bottom:10px;">Active Strategies</div>
+      ${l9.active_strategies.map(s => `
+        <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--bg-card-2);border:1px solid var(--border);border-radius:8px;margin-bottom:8px;">
+          <div style="flex:1;">
+            <div style="font-weight:600;font-size:13px;">${s.name}</div>
+            <div style="font-size:11px;color:var(--text-dim);margin-top:2px;">${s.asset} · promoted ${s.promoted_at || s.created_at || '—'}</div>
+          </div>
+          ${familyBadge(s)}
+          <span class="verdict-badge verdict-${s.status === 'promoted' ? 'ACCUMULATE' : 'HOLD'}" style="font-size:10px;padding:3px 9px;">${s.status.toUpperCase()}</span>
+        </div>
+      `).join('')}
+    </div>` : '<div style="color:var(--text-muted);font-size:13px;padding:12px 0;">No active strategies yet — L9 invention cycle runs weekly.</div>'}
+  `;
+}
+
+// ── Render paper portfolio ────────────────────────────────────
+
+function renderPortfolio(l9) {
+  const el = document.getElementById('portfolio-grid');
+  if (!el || !l9) return;
+
+  const p = l9.portfolio || {};
+  const roiColor = (p.roi_pct || 0) >= 0 ? 'var(--green)' : 'var(--red)';
+  const roiSign  = (p.roi_pct || 0) >= 0 ? '+' : '';
+  const wrColor  = (p.win_rate || 0) >= 0.5 ? 'var(--green)' : 'var(--red)';
+
+  const openPos = p.open_positions || [];
+  const recentT = p.recent_trades || [];
+
+  el.innerHTML = `
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px;">
+      <div style="background:var(--bg-card-2);border:1px solid var(--border);border-radius:8px;padding:14px;text-align:center;">
+        <div style="font-size:22px;font-weight:700;color:var(--gold)">$${fmt(p.equity, 0)}</div>
+        <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.6px">Equity</div>
+      </div>
+      <div style="background:var(--bg-card-2);border:1px solid var(--border);border-radius:8px;padding:14px;text-align:center;">
+        <div style="font-size:22px;font-weight:700;color:${roiColor}">${roiSign}${fmt(p.roi_pct, 2)}%</div>
+        <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.6px">ROI vs $10k</div>
+      </div>
+      <div style="background:var(--bg-card-2);border:1px solid var(--border);border-radius:8px;padding:14px;text-align:center;">
+        <div style="font-size:22px;font-weight:700;color:${wrColor}">${p.win_rate != null ? (p.win_rate*100).toFixed(0)+'%' : '—'}</div>
+        <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.6px">Win Rate</div>
+      </div>
+      <div style="background:var(--bg-card-2);border:1px solid var(--border);border-radius:8px;padding:14px;text-align:center;">
+        <div style="font-size:22px;font-weight:700;color:var(--text)">${p.total_trades || 0}</div>
+        <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.6px">Closed Trades</div>
+      </div>
+    </div>
+
+    ${openPos.length > 0 ? `
+    <div style="margin-bottom:20px;">
+      <div style="font-size:11px;text-transform:uppercase;letter-spacing:.7px;color:var(--text-muted);margin-bottom:10px;">Open Positions</div>
+      ${openPos.map(t => {
+        const pnlColor = (t.unrealised_pct || 0) >= 0 ? 'var(--green)' : 'var(--red)';
+        const pnlSign  = (t.unrealised_pct || 0) >= 0 ? '+' : '';
+        return `
+        <div style="display:flex;align-items:center;gap:12px;padding:10px 14px;background:var(--bg-card-2);border:1px solid var(--border);border-radius:8px;margin-bottom:8px;">
+          <div style="flex:1;">
+            <div style="font-weight:600;font-size:13px;">${t.strategy_name}</div>
+            <div style="font-size:11px;color:var(--text-dim);">${t.etf} · entered ${t.entry_date} @ $${fmt(t.entry_price, 2)} · ${t.days_held}d</div>
+          </div>
+          <div style="text-align:right;">
+            <div style="font-weight:700;color:${pnlColor}">${pnlSign}${fmt(t.unrealised_pct, 2)}%</div>
+            <div style="font-size:11px;color:var(--text-muted)">unrealised</div>
+          </div>
+        </div>`;
+      }).join('')}
+    </div>` : ''}
+
+    ${recentT.length > 0 ? `
+    <div>
+      <div style="font-size:11px;text-transform:uppercase;letter-spacing:.7px;color:var(--text-muted);margin-bottom:10px;">Recent Trades</div>
+      <table class="tf-table">
+        <thead><tr><th>Strategy</th><th>ETF</th><th>Entry</th><th>Exit</th><th>Days</th><th>P&L</th></tr></thead>
+        <tbody>
+          ${[...recentT].reverse().map(t => {
+            const pnlColor = (t.pnl_dollar || 0) >= 0 ? 'var(--green)' : 'var(--red)';
+            const pnlSign  = (t.pnl_dollar || 0) >= 0 ? '+' : '';
+            return `<tr>
+              <td style="max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${t.strategy_name}</td>
+              <td>${t.etf || '—'}</td>
+              <td>$${fmt(t.entry_price, 2)}</td>
+              <td>$${fmt(t.exit_price, 2)}</td>
+              <td>${t.days_held}</td>
+              <td style="color:${pnlColor};font-weight:600">${pnlSign}$${fmt(Math.abs(t.pnl_dollar), 2)}</td>
+            </tr>`;
+          }).join('')}
+        </tbody>
+      </table>
+    </div>` : '<div style="color:var(--text-muted);font-size:13px;padding:12px 0;">No closed trades yet — paper trades open when strategies trigger entry conditions.</div>'}
+  `;
+}
+
 // ── Main load ─────────────────────────────────────────────────
 
 async function loadAll() {
   try {
-    const [meta, macro, gold, silver, miners] = await Promise.all([
+    const [meta, macro, gold, silver, miners, l9] = await Promise.all([
       fetchJSON(BASE + 'meta.json'),
       fetchJSON(BASE + 'macro.json'),
       fetchJSON(BASE + 'gold.json').catch(() => null),
       fetchJSON(BASE + 'silver.json').catch(() => null),
       fetchJSON(BASE + 'miners.json').catch(() => null),
+      fetchJSON(BASE + 'l9.json').catch(() => null),
     ]);
 
     // Status bar
@@ -343,6 +483,18 @@ async function loadAll() {
 
     // Signal breakdown
     renderSignals(payloads);
+
+    // L9 + portfolio
+    if (l9) {
+      renderL9(l9);
+      renderPortfolio(l9);
+    }
+
+    // L9 schedule row
+    if (meta && meta.last_l9_run) {
+      const el = document.getElementById('sched-l9-last');
+      if (el) el.textContent = timeAgo(meta.last_l9_run);
+    }
 
   } catch (e) {
     console.error('Load failed:', e);

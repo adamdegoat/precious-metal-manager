@@ -108,6 +108,32 @@
       </div>
     </section>
 
+    <!-- L9 INTELLIGENCE PANEL -->
+    <section class="panel">
+      <h2 class="panel-title">
+        L9 Strategy Intelligence
+        <span class="panel-subtitle">Autonomous · invents · backtests · paper-trades · self-retires</span>
+      </h2>
+      <div style="font-size:12px;color:var(--text-muted);margin-bottom:16px;">
+        Runs weekly (Sun 02:00 SGT). Claude invents metals strategies → 8-gate gauntlet (IS Sharpe, OOS Sharpe, min trades, slippage, max DD, profit factor, alpha, red-team) → paper book → decay monitoring.
+        <span id="sched-l9-last" style="margin-left:8px;color:var(--gold);"></span>
+      </div>
+      <div id="l9-grid">
+        <div class="card-loading"><div class="spinner"></div></div>
+      </div>
+    </section>
+
+    <!-- PAPER PORTFOLIO PANEL -->
+    <section class="panel">
+      <h2 class="panel-title">
+        Paper Portfolio
+        <span class="panel-subtitle">Simulated $10,000 · tracks all L9 strategy signals</span>
+      </h2>
+      <div id="portfolio-grid">
+        <div class="card-loading"><div class="spinner"></div></div>
+      </div>
+    </section>
+
     <!-- DISCLAIMER -->
     <section class="panel disclaimer">
       <p>
