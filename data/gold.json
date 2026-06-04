@@ -66,9 +66,9 @@
       "macd_val": -5.2342,
       "ema_stack": "mixed",
       "volume": "normal",
-      "vol_ratio": 0.8,
+      "vol_ratio": 0.85,
       "bb_pct": 0.173,
-      "atr": 6.9847,
+      "atr": 6.984,
       "week52_pct": 54.8,
       "mom_30d": -5.05
     },
