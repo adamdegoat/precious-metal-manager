@@ -3,13 +3,13 @@
   "label": "Silver",
   "etf": "SLV",
   "icon": "\u25c8",
-  "price": 66.68,
-  "change_24h": 0.71,
+  "price": 67.01,
+  "change_24h": 1.21,
   "levels": {
     "support": [
-      66.37,
-      66.21,
-      66.01
+      66.9,
+      66.69,
+      66.37
     ],
     "resistance": [
       67.99,
@@ -18,8 +18,8 @@
     ]
   },
   "verdict": "AVOID",
-  "score": -3.6,
-  "summary": "Silver shows a mixed EMA structure \u2014 no clear directional bias yet. RSI at 43.8 \u2014 momentum is neutral. Dollar is broadly flat \u2014 limited macro catalyst from DXY. Gold/Silver ratio at 60.8 \u2014 silver is outperforming, momentum favors silver. Macro regime: RISK-ON.",
+  "score": -3.1,
+  "summary": "Silver shows a mixed EMA structure \u2014 no clear directional bias yet. RSI at 44.6 \u2014 momentum is neutral. Dollar is broadly flat \u2014 limited macro catalyst from DXY. Gold/Silver ratio at 60.6 \u2014 silver is outperforming, momentum favors silver. Macro regime: RISK-ON.",
   "moomoo": {
     "action": "Avoid SLV.",
     "note": null,
@@ -29,82 +29,82 @@
     {
       "tf": "daily",
       "ema_stack": "mixed",
-      "rsi": 43.8,
+      "rsi": 44.6,
       "rsi_label": "neutral",
       "macd": "bearish",
       "volume": "low",
-      "bb_pct": 0.265
+      "bb_pct": 0.284
     },
     {
       "tf": "4h",
       "ema_stack": "bearish",
-      "rsi": 40.5,
+      "rsi": 42.3,
       "rsi_label": "neutral",
       "macd": "bearish",
-      "volume": "normal",
-      "bb_pct": 0.119
+      "volume": "low",
+      "bb_pct": 0.232
     },
     {
       "tf": "1h",
       "ema_stack": "bearish",
-      "rsi": 41.8,
+      "rsi": 47.0,
       "rsi_label": "neutral",
-      "macd": "bearish",
+      "macd": "bullish",
       "volume": "low",
-      "bb_pct": 0.324
+      "bb_pct": 0.476
     }
   ],
   "signals": {
     "daily": {
-      "close": 66.68000030517578,
-      "ema20": 68.8866,
-      "ema50": 69.6314,
-      "ema200": 61.4048,
-      "rsi": 43.8,
+      "close": 67.01000213623047,
+      "ema20": 68.918,
+      "ema50": 69.6444,
+      "ema200": 61.408,
+      "rsi": 44.6,
       "rsi_label": "neutral",
       "macd": "bearish",
-      "macd_val": -0.8642,
+      "macd_val": -0.8379,
       "ema_stack": "mixed",
       "volume": "low",
-      "vol_ratio": 0.33,
-      "bb_pct": 0.265,
+      "vol_ratio": 0.49,
+      "bb_pct": 0.284,
       "atr": 2.1875,
-      "week52_pct": 47.6,
-      "mom_30d": -5.24
+      "week52_pct": 48.0,
+      "mom_30d": -4.77
     },
     "4h": {
-      "close": 66.68000030517578,
-      "ema20": 68.1644,
-      "ema50": 69.1868,
-      "ema200": 71.509,
-      "rsi": 40.5,
+      "close": 67.01000213623047,
+      "ema20": 68.0648,
+      "ema50": 69.106,
+      "ema200": 71.4654,
+      "rsi": 42.3,
       "rsi_label": "neutral",
       "macd": "bearish",
-      "macd_val": -0.9483,
+      "macd_val": -0.9148,
       "ema_stack": "bearish",
-      "volume": "normal",
-      "vol_ratio": 0.98,
-      "bb_pct": 0.119,
-      "atr": 1.2839,
-      "week52_pct": 29.4,
-      "mom_30d": -17.49
+      "volume": "low",
+      "vol_ratio": 0.41,
+      "bb_pct": 0.232,
+      "atr": 1.1747,
+      "week52_pct": 31.1,
+      "mom_30d": -15.54
     },
     "1h": {
-      "close": 66.68000030517578,
-      "ema20": 67.0846,
-      "ema50": 67.7894,
-      "ema200": 69.3323,
-      "rsi": 41.8,
+      "close": 67.01000213623047,
+      "ema20": 67.0389,
+      "ema50": 67.6644,
+      "ema200": 69.2387,
+      "rsi": 47.0,
       "rsi_label": "neutral",
-      "macd": "bearish",
-      "macd_val": -0.431,
+      "macd": "bullish",
+      "macd_val": -0.2864,
       "ema_stack": "bearish",
       "volume": "low",
       "vol_ratio": 0.16,
-      "bb_pct": 0.324,
-      "atr": 0.599,
-      "week52_pct": 13.5,
-      "mom_30d": -1.46
+      "bb_pct": 0.476,
+      "atr": 0.4413,
+      "week52_pct": 15.5,
+      "mom_30d": -2.08
     }
   }
 }
