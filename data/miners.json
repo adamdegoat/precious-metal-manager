@@ -3,8 +3,8 @@
   "label": "Gold Miners",
   "etf": "GDX",
   "icon": "\u26cf",
-  "price": 86.315,
-  "change_24h": 1.55,
+  "price": 86.4,
+  "change_24h": 1.65,
   "levels": {
     "support": [
       86.22,
@@ -12,99 +12,99 @@
       85.73
     ],
     "resistance": [
-      86.32,
-      86.36,
-      86.84
+      86.84,
+      88.05,
+      88.29
     ]
   },
   "verdict": "REDUCE",
-  "score": -3.0,
-  "summary": "Miners shows a mixed EMA structure \u2014 no clear directional bias yet. RSI at 45.3 \u2014 momentum is neutral. Dollar is broadly flat \u2014 limited macro catalyst from DXY. Macro regime: RISK-ON.",
+  "score": -2.6,
+  "summary": "Miners shows a mixed EMA structure \u2014 no clear directional bias yet. RSI at 45.5 \u2014 momentum is neutral. Dollar is broadly flat \u2014 limited macro catalyst from DXY. Macro regime: RISK-ON.",
   "moomoo": {
     "action": "Reduce or avoid GDX.",
-    "note": "Conditions deteriorating. Trim into strength near $86.32.",
+    "note": "Conditions deteriorating. Trim into strength near $86.84.",
     "avoid": null
   },
   "tf_table": [
     {
       "tf": "daily",
       "ema_stack": "mixed",
-      "rsi": 45.3,
+      "rsi": 45.5,
       "rsi_label": "neutral",
       "macd": "bearish",
-      "volume": "low",
-      "bb_pct": 0.337
+      "volume": "normal",
+      "bb_pct": 0.342
     },
     {
       "tf": "4h",
       "ema_stack": "bearish",
-      "rsi": 46.3,
+      "rsi": 46.5,
       "rsi_label": "neutral",
       "macd": "bullish",
       "volume": "low",
-      "bb_pct": 0.419
+      "bb_pct": 0.43
     },
     {
       "tf": "1h",
       "ema_stack": "bearish",
-      "rsi": 48.0,
+      "rsi": 48.5,
       "rsi_label": "neutral",
       "macd": "bullish",
-      "volume": "low",
-      "bb_pct": 0.446
+      "volume": "normal",
+      "bb_pct": 0.462
     }
   ],
   "signals": {
     "daily": {
-      "close": 86.31500244140625,
-      "ema20": 88.275,
-      "ema50": 90.8186,
-      "ema200": 84.0722,
-      "rsi": 45.3,
+      "close": 86.4000015258789,
+      "ema20": 88.2831,
+      "ema50": 90.8219,
+      "ema200": 84.0731,
+      "rsi": 45.5,
       "rsi_label": "neutral",
       "macd": "bearish",
-      "macd_val": -1.5912,
+      "macd_val": -1.5844,
       "ema_stack": "mixed",
-      "volume": "low",
-      "vol_ratio": 0.41,
-      "bb_pct": 0.337,
+      "volume": "normal",
+      "vol_ratio": 0.64,
+      "bb_pct": 0.342,
       "atr": 3.4302,
-      "week52_pct": 54.9,
-      "mom_30d": -8.64
+      "week52_pct": 55.0,
+      "mom_30d": -8.55
     },
     "4h": {
-      "close": 86.31500244140625,
-      "ema20": 87.0999,
-      "ema50": 88.7747,
-      "ema200": 93.4674,
-      "rsi": 46.3,
+      "close": 86.37999725341797,
+      "ema20": 87.1061,
+      "ema50": 88.7772,
+      "ema200": 93.4681,
+      "rsi": 46.5,
       "rsi_label": "neutral",
       "macd": "bullish",
-      "macd_val": -0.7403,
+      "macd_val": -0.7351,
       "ema_stack": "bearish",
       "volume": "low",
-      "vol_ratio": 0.36,
-      "bb_pct": 0.419,
-      "atr": 1.9466,
-      "week52_pct": 28.1,
-      "mom_30d": -10.28
+      "vol_ratio": 0.58,
+      "bb_pct": 0.43,
+      "atr": 1.9613,
+      "week52_pct": 28.4,
+      "mom_30d": -10.22
     },
     "1h": {
-      "close": 86.31500244140625,
-      "ema20": 86.4731,
-      "ema50": 86.8285,
-      "ema200": 89.1759,
-      "rsi": 48.0,
+      "close": 86.37999725341797,
+      "ema20": 86.4793,
+      "ema50": 86.831,
+      "ema200": 89.1765,
+      "rsi": 48.5,
       "rsi_label": "neutral",
       "macd": "bullish",
-      "macd_val": -0.1953,
+      "macd_val": -0.1902,
       "ema_stack": "bearish",
-      "volume": "low",
-      "vol_ratio": 0.24,
-      "bb_pct": 0.446,
-      "atr": 0.728,
-      "week52_pct": 14.4,
-      "mom_30d": -3.19
+      "volume": "normal",
+      "vol_ratio": 1.28,
+      "bb_pct": 0.462,
+      "atr": 0.7467,
+      "week52_pct": 14.7,
+      "mom_30d": -3.11
     }
   }
 }

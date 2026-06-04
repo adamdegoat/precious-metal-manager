@@ -3,8 +3,8 @@
   "label": "Silver",
   "etf": "SLV",
   "icon": "\u25c8",
-  "price": 67.01,
-  "change_24h": 1.21,
+  "price": 66.98,
+  "change_24h": 1.16,
   "levels": {
     "support": [
       66.9,
@@ -33,78 +33,78 @@
       "rsi_label": "neutral",
       "macd": "bearish",
       "volume": "low",
-      "bb_pct": 0.284
+      "bb_pct": 0.282
     },
     {
       "tf": "4h",
       "ema_stack": "bearish",
-      "rsi": 42.3,
+      "rsi": 42.2,
       "rsi_label": "neutral",
       "macd": "bearish",
       "volume": "low",
-      "bb_pct": 0.232
+      "bb_pct": 0.225
     },
     {
       "tf": "1h",
       "ema_stack": "bearish",
-      "rsi": 47.0,
+      "rsi": 46.5,
       "rsi_label": "neutral",
       "macd": "bullish",
       "volume": "low",
-      "bb_pct": 0.476
+      "bb_pct": 0.467
     }
   ],
   "signals": {
     "daily": {
-      "close": 67.01000213623047,
-      "ema20": 68.918,
-      "ema50": 69.6444,
-      "ema200": 61.408,
+      "close": 66.9800033569336,
+      "ema20": 68.9152,
+      "ema50": 69.6432,
+      "ema200": 61.4077,
       "rsi": 44.6,
       "rsi_label": "neutral",
       "macd": "bearish",
-      "macd_val": -0.8379,
+      "macd_val": -0.8403,
       "ema_stack": "mixed",
       "volume": "low",
-      "vol_ratio": 0.49,
-      "bb_pct": 0.284,
+      "vol_ratio": 0.53,
+      "bb_pct": 0.282,
       "atr": 2.1875,
       "week52_pct": 48.0,
-      "mom_30d": -4.77
+      "mom_30d": -4.82
     },
     "4h": {
-      "close": 67.01000213623047,
-      "ema20": 68.0648,
-      "ema50": 69.106,
-      "ema200": 71.4654,
-      "rsi": 42.3,
+      "close": 66.9800033569336,
+      "ema20": 68.062,
+      "ema50": 69.1048,
+      "ema200": 71.4651,
+      "rsi": 42.2,
       "rsi_label": "neutral",
       "macd": "bearish",
-      "macd_val": -0.9148,
+      "macd_val": -0.9172,
       "ema_stack": "bearish",
       "volume": "low",
-      "vol_ratio": 0.41,
-      "bb_pct": 0.232,
+      "vol_ratio": 0.47,
+      "bb_pct": 0.225,
       "atr": 1.1747,
-      "week52_pct": 31.1,
-      "mom_30d": -15.54
+      "week52_pct": 30.9,
+      "mom_30d": -15.58
     },
     "1h": {
-      "close": 67.01000213623047,
-      "ema20": 67.0389,
-      "ema50": 67.6644,
-      "ema200": 69.2387,
-      "rsi": 47.0,
+      "close": 66.9800033569336,
+      "ema20": 67.0365,
+      "ema50": 67.6634,
+      "ema200": 69.2384,
+      "rsi": 46.5,
       "rsi_label": "neutral",
       "macd": "bullish",
-      "macd_val": -0.2864,
+      "macd_val": -0.2885,
       "ema_stack": "bearish",
       "volume": "low",
-      "vol_ratio": 0.16,
-      "bb_pct": 0.476,
+      "vol_ratio": 0.46,
+      "bb_pct": 0.467,
       "atr": 0.4413,
-      "week52_pct": 15.5,
-      "mom_30d": -2.08
+      "week52_pct": 15.4,
+      "mom_30d": -2.13
     }
   }
 }
