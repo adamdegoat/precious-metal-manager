@@ -3,13 +3,13 @@
   "label": "Silver",
   "etf": "SLV",
   "icon": "\u25c8",
-  "price": 66.21,
-  "change_24h": -2.62,
+  "price": 66.68,
+  "change_24h": 0.71,
   "levels": {
     "support": [
-      66.01,
-      65.94,
-      65.91
+      66.37,
+      66.21,
+      66.01
     ],
     "resistance": [
       67.99,
@@ -18,8 +18,8 @@
     ]
   },
   "verdict": "AVOID",
-  "score": -3.75,
-  "summary": "Silver shows a mixed EMA structure \u2014 no clear directional bias yet. RSI at 42.5 \u2014 momentum is neutral. Dollar is broadly flat \u2014 limited macro catalyst from DXY. Gold/Silver ratio at 60.9 \u2014 silver is outperforming, momentum favors silver. Macro regime: NEUTRAL.",
+  "score": -3.6,
+  "summary": "Silver shows a mixed EMA structure \u2014 no clear directional bias yet. RSI at 43.8 \u2014 momentum is neutral. Dollar is broadly flat \u2014 limited macro catalyst from DXY. Gold/Silver ratio at 60.8 \u2014 silver is outperforming, momentum favors silver. Macro regime: RISK-ON.",
   "moomoo": {
     "action": "Avoid SLV.",
     "note": null,
@@ -29,82 +29,82 @@
     {
       "tf": "daily",
       "ema_stack": "mixed",
-      "rsi": 42.5,
+      "rsi": 43.8,
       "rsi_label": "neutral",
       "macd": "bearish",
       "volume": "low",
-      "bb_pct": 0.22
+      "bb_pct": 0.265
     },
     {
       "tf": "4h",
       "ema_stack": "bearish",
-      "rsi": 37.7,
-      "rsi_label": "weak",
+      "rsi": 40.5,
+      "rsi_label": "neutral",
       "macd": "bearish",
       "volume": "normal",
-      "bb_pct": 0.0
+      "bb_pct": 0.119
     },
     {
       "tf": "1h",
       "ema_stack": "bearish",
-      "rsi": 31.9,
-      "rsi_label": "weak",
+      "rsi": 41.8,
+      "rsi_label": "neutral",
       "macd": "bearish",
-      "volume": "normal",
-      "bb_pct": 0.136
+      "volume": "low",
+      "bb_pct": 0.324
     }
   ],
   "signals": {
     "daily": {
-      "close": 66.20999908447266,
-      "ema20": 69.1189,
-      "ema50": 69.7519,
-      "ema200": 61.3769,
-      "rsi": 42.5,
+      "close": 66.68000030517578,
+      "ema20": 68.8866,
+      "ema50": 69.6314,
+      "ema200": 61.4048,
+      "rsi": 43.8,
       "rsi_label": "neutral",
       "macd": "bearish",
-      "macd_val": -0.7719,
+      "macd_val": -0.8642,
       "ema_stack": "mixed",
       "volume": "low",
-      "vol_ratio": 0.59,
-      "bb_pct": 0.22,
-      "atr": 2.2917,
-      "week52_pct": 47.0,
-      "mom_30d": -3.33
+      "vol_ratio": 0.33,
+      "bb_pct": 0.265,
+      "atr": 2.1875,
+      "week52_pct": 47.6,
+      "mom_30d": -5.24
     },
     "4h": {
-      "close": 66.21499633789062,
-      "ema20": 68.3207,
-      "ema50": 69.3257,
-      "ema200": 72.8274,
-      "rsi": 37.7,
-      "rsi_label": "weak",
+      "close": 66.68000030517578,
+      "ema20": 68.1644,
+      "ema50": 69.1868,
+      "ema200": 71.509,
+      "rsi": 40.5,
+      "rsi_label": "neutral",
       "macd": "bearish",
-      "macd_val": -0.9347,
+      "macd_val": -0.9483,
       "ema_stack": "bearish",
       "volume": "normal",
-      "vol_ratio": 0.61,
-      "bb_pct": 0.0,
-      "atr": 1.2476,
-      "week52_pct": 26.8,
-      "mom_30d": -15.7
+      "vol_ratio": 0.98,
+      "bb_pct": 0.119,
+      "atr": 1.2839,
+      "week52_pct": 29.4,
+      "mom_30d": -17.49
     },
     "1h": {
-      "close": 66.21499633789062,
-      "ema20": 67.2088,
-      "ema50": 67.9238,
-      "ema200": 69.4554,
-      "rsi": 31.9,
-      "rsi_label": "weak",
+      "close": 66.68000030517578,
+      "ema20": 67.0846,
+      "ema50": 67.7894,
+      "ema200": 69.3323,
+      "rsi": 41.8,
+      "rsi_label": "neutral",
       "macd": "bearish",
-      "macd_val": -0.5056,
+      "macd_val": -0.431,
       "ema_stack": "bearish",
-      "volume": "normal",
-      "vol_ratio": 0.62,
-      "bb_pct": 0.136,
-      "atr": 0.5076,
-      "week52_pct": 10.7,
-      "mom_30d": -3.41
+      "volume": "low",
+      "vol_ratio": 0.16,
+      "bb_pct": 0.324,
+      "atr": 0.599,
+      "week52_pct": 13.5,
+      "mom_30d": -1.46
     }
   }
 }
