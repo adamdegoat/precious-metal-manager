@@ -3,108 +3,104 @@
   "label": "Gold Miners",
   "etf": "GDX",
   "icon": "\u26cf",
-  "price": 86.4,
-  "change_24h": 1.65,
+  "price": 80.115,
+  "change_24h": -7.27,
   "levels": {
-    "support": [
-      86.22,
-      85.85,
-      85.73
-    ],
+    "support": [],
     "resistance": [
-      86.84,
-      88.05,
-      88.29
+      85.21,
+      86.32,
+      86.36
     ]
   },
-  "verdict": "REDUCE",
-  "score": -2.6,
-  "summary": "Miners shows a mixed EMA structure \u2014 no clear directional bias yet. RSI at 45.5 \u2014 momentum is neutral. Dollar is broadly flat \u2014 limited macro catalyst from DXY. Macro regime: RISK-ON.",
+  "verdict": "AVOID",
+  "score": -4.5,
+  "summary": "Miners shows a mixed EMA structure \u2014 no clear directional bias yet. RSI at 37.4 \u2014 momentum is weak. Dollar is broadly flat \u2014 limited macro catalyst from DXY. 10Y yield at 4.54% \u2014 elevated real rates create competition for gold. Macro regime: NEUTRAL.",
   "moomoo": {
-    "action": "Reduce or avoid GDX.",
-    "note": "Conditions deteriorating. Trim into strength near $86.84.",
-    "avoid": null
+    "action": "Avoid GDX.",
+    "note": null,
+    "avoid": "Macro and technical signals both negative. Stand aside."
   },
   "tf_table": [
     {
       "tf": "daily",
       "ema_stack": "mixed",
-      "rsi": 45.5,
-      "rsi_label": "neutral",
+      "rsi": 37.4,
+      "rsi_label": "weak",
       "macd": "bearish",
       "volume": "normal",
-      "bb_pct": 0.342
+      "bb_pct": 0.057
     },
     {
       "tf": "4h",
       "ema_stack": "bearish",
-      "rsi": 46.5,
-      "rsi_label": "neutral",
-      "macd": "bullish",
-      "volume": "low",
-      "bb_pct": 0.43
+      "rsi": 33.4,
+      "rsi_label": "weak",
+      "macd": "bearish",
+      "volume": "high",
+      "bb_pct": 0.0
     },
     {
       "tf": "1h",
       "ema_stack": "bearish",
-      "rsi": 48.5,
-      "rsi_label": "neutral",
-      "macd": "bullish",
-      "volume": "normal",
-      "bb_pct": 0.462
+      "rsi": 24.4,
+      "rsi_label": "oversold",
+      "macd": "bearish",
+      "volume": "low",
+      "bb_pct": 0.0
     }
   ],
   "signals": {
     "daily": {
-      "close": 86.4000015258789,
-      "ema20": 88.2831,
-      "ema50": 90.8219,
-      "ema200": 84.0731,
-      "rsi": 45.5,
-      "rsi_label": "neutral",
+      "close": 80.11499786376953,
+      "ema20": 87.5051,
+      "ema50": 90.402,
+      "ema200": 84.0301,
+      "rsi": 37.4,
+      "rsi_label": "weak",
       "macd": "bearish",
-      "macd_val": -1.5844,
+      "macd_val": -2.0438,
       "ema_stack": "mixed",
       "volume": "normal",
-      "vol_ratio": 0.65,
-      "bb_pct": 0.342,
-      "atr": 3.4302,
-      "week52_pct": 55.0,
-      "mom_30d": -8.55
+      "vol_ratio": 0.75,
+      "bb_pct": 0.057,
+      "atr": 3.8382,
+      "week52_pct": 45.4,
+      "mom_30d": -13.1
     },
     "4h": {
-      "close": 86.37999725341797,
-      "ema20": 87.1061,
-      "ema50": 88.7772,
-      "ema200": 93.4681,
-      "rsi": 46.5,
-      "rsi_label": "neutral",
-      "macd": "bullish",
-      "macd_val": -0.7351,
+      "close": 80.11499786376953,
+      "ema20": 86.4403,
+      "ema50": 88.4347,
+      "ema200": 93.2435,
+      "rsi": 33.4,
+      "rsi_label": "weak",
+      "macd": "bearish",
+      "macd_val": -1.2071,
       "ema_stack": "bearish",
-      "volume": "low",
-      "vol_ratio": 0.58,
-      "bb_pct": 0.43,
-      "atr": 1.9613,
-      "week52_pct": 28.4,
-      "mom_30d": -10.22
+      "volume": "high",
+      "vol_ratio": 1.85,
+      "bb_pct": 0.0,
+      "atr": 2.5625,
+      "week52_pct": 0.0,
+      "mom_30d": -14.97
     },
     "1h": {
-      "close": 86.37999725341797,
-      "ema20": 86.4793,
-      "ema50": 86.831,
-      "ema200": 89.1765,
-      "rsi": 48.5,
-      "rsi_label": "neutral",
-      "macd": "bullish",
-      "macd_val": -0.1902,
+      "close": 80.11499786376953,
+      "ema20": 84.8858,
+      "ema50": 86.0973,
+      "ema200": 88.8933,
+      "rsi": 24.4,
+      "rsi_label": "oversold",
+      "macd": "bearish",
+      "macd_val": -1.2896,
       "ema_stack": "bearish",
-      "volume": "normal",
-      "vol_ratio": 1.28,
-      "bb_pct": 0.462,
-      "atr": 0.7467,
-      "week52_pct": 14.7,
-      "mom_30d": -3.11
+      "volume": "low",
+      "vol_ratio": 0.44,
+      "bb_pct": 0.0,
+      "atr": 1.2906,
+      "week52_pct": 0.0,
+      "mom_30d": -6.35
     }
   }
 }

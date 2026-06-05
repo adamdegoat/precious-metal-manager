@@ -3,23 +3,23 @@
   "label": "Silver",
   "etf": "SLV",
   "icon": "\u25c8",
-  "price": 66.98,
-  "change_24h": 1.16,
+  "price": 62.32,
+  "change_24h": -6.96,
   "levels": {
     "support": [
-      66.9,
-      66.69,
-      66.37
+      61.52,
+      60.77,
+      59.32
     ],
     "resistance": [
-      67.99,
-      68.29,
-      68.36
+      65.21,
+      66.09,
+      66.98
     ]
   },
   "verdict": "AVOID",
-  "score": -3.1,
-  "summary": "Silver shows a mixed EMA structure \u2014 no clear directional bias yet. RSI at 44.6 \u2014 momentum is neutral. Dollar is broadly flat \u2014 limited macro catalyst from DXY. Gold/Silver ratio at 61.6 \u2014 silver is outperforming, momentum favors silver. Macro regime: RISK-ON.",
+  "score": -3.5,
+  "summary": "Silver shows a mixed EMA structure \u2014 no clear directional bias yet. RSI at 36.3 \u2014 momentum is weak. Dollar is broadly flat \u2014 limited macro catalyst from DXY. 10Y yield at 4.54% \u2014 elevated real rates create competition for gold. Gold/Silver ratio at 63.3 \u2014 silver is outperforming, momentum favors silver. Macro regime: NEUTRAL.",
   "moomoo": {
     "action": "Avoid SLV.",
     "note": null,
@@ -29,82 +29,82 @@
     {
       "tf": "daily",
       "ema_stack": "mixed",
-      "rsi": 44.6,
-      "rsi_label": "neutral",
+      "rsi": 36.3,
+      "rsi_label": "weak",
       "macd": "bearish",
-      "volume": "low",
-      "bb_pct": 0.282
+      "volume": "normal",
+      "bb_pct": 0.067
     },
     {
       "tf": "4h",
       "ema_stack": "bearish",
-      "rsi": 42.2,
-      "rsi_label": "neutral",
+      "rsi": 28.2,
+      "rsi_label": "oversold",
       "macd": "bearish",
-      "volume": "low",
-      "bb_pct": 0.225
+      "volume": "high",
+      "bb_pct": 0.0
     },
     {
       "tf": "1h",
       "ema_stack": "bearish",
-      "rsi": 46.5,
-      "rsi_label": "neutral",
-      "macd": "bullish",
+      "rsi": 17.9,
+      "rsi_label": "oversold",
+      "macd": "bearish",
       "volume": "low",
-      "bb_pct": 0.467
+      "bb_pct": 0.0
     }
   ],
   "signals": {
     "daily": {
-      "close": 66.9800033569336,
-      "ema20": 68.9152,
-      "ema50": 69.6432,
-      "ema200": 61.4077,
-      "rsi": 44.6,
-      "rsi_label": "neutral",
+      "close": 62.31999969482422,
+      "ema20": 68.2871,
+      "ema50": 69.356,
+      "ema200": 61.4082,
+      "rsi": 36.3,
+      "rsi_label": "weak",
       "macd": "bearish",
-      "macd_val": -0.8403,
+      "macd_val": -1.256,
       "ema_stack": "mixed",
-      "volume": "low",
-      "vol_ratio": 0.53,
-      "bb_pct": 0.282,
-      "atr": 2.1888,
-      "week52_pct": 48.0,
-      "mom_30d": -4.82
+      "volume": "normal",
+      "vol_ratio": 0.93,
+      "bb_pct": 0.067,
+      "atr": 2.5678,
+      "week52_pct": 40.8,
+      "mom_30d": -8.86
     },
     "4h": {
-      "close": 66.9800033569336,
-      "ema20": 68.062,
-      "ema50": 69.1048,
-      "ema200": 71.4651,
-      "rsi": 42.2,
-      "rsi_label": "neutral",
+      "close": 62.31999969482422,
+      "ema20": 67.5151,
+      "ema50": 68.8413,
+      "ema200": 71.4746,
+      "rsi": 28.2,
+      "rsi_label": "oversold",
       "macd": "bearish",
-      "macd_val": -0.9172,
+      "macd_val": -1.2616,
       "ema_stack": "bearish",
-      "volume": "low",
-      "vol_ratio": 0.47,
-      "bb_pct": 0.225,
-      "atr": 1.1747,
-      "week52_pct": 30.9,
-      "mom_30d": -15.58
+      "volume": "high",
+      "vol_ratio": 2.55,
+      "bb_pct": 0.0,
+      "atr": 1.6889,
+      "week52_pct": 7.7,
+      "mom_30d": -18.65
     },
     "1h": {
-      "close": 66.9800033569336,
-      "ema20": 67.0365,
-      "ema50": 67.6634,
-      "ema200": 69.2384,
-      "rsi": 46.5,
-      "rsi_label": "neutral",
-      "macd": "bullish",
-      "macd_val": -0.2885,
+      "close": 62.31999969482422,
+      "ema20": 65.8346,
+      "ema50": 67.069,
+      "ema200": 69.0353,
+      "rsi": 17.9,
+      "rsi_label": "oversold",
+      "macd": "bearish",
+      "macd_val": -1.0723,
       "ema_stack": "bearish",
       "volume": "low",
-      "vol_ratio": 0.46,
-      "bb_pct": 0.467,
-      "atr": 0.4413,
-      "week52_pct": 15.4,
-      "mom_30d": -2.13
+      "vol_ratio": 0.54,
+      "bb_pct": 0.0,
+      "atr": 0.9343,
+      "week52_pct": 0.0,
+      "mom_30d": -7.32
     }
   }
 }
