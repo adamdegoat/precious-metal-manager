@@ -3,8 +3,8 @@
   "label": "Silver",
   "etf": "SLV",
   "icon": "\u25c8",
-  "price": 62.32,
-  "change_24h": -6.96,
+  "price": 61.595,
+  "change_24h": -8.04,
   "levels": {
     "support": [
       61.52,
@@ -17,28 +17,28 @@
       66.98
     ]
   },
-  "verdict": "AVOID",
-  "score": -3.5,
-  "summary": "Silver shows a mixed EMA structure \u2014 no clear directional bias yet. RSI at 36.3 \u2014 momentum is weak. Dollar is broadly flat \u2014 limited macro catalyst from DXY. 10Y yield at 4.54% \u2014 elevated real rates create competition for gold. Gold/Silver ratio at 63.3 \u2014 silver is outperforming, momentum favors silver. Macro regime: NEUTRAL.",
+  "verdict": "REDUCE",
+  "score": -1.65,
+  "summary": "Silver shows a mixed EMA structure \u2014 no clear directional bias yet. RSI at 35.2 \u2014 momentum is weak. Dollar is broadly flat \u2014 limited macro catalyst from DXY. 10Y yield at 4.54% \u2014 elevated real rates create competition for gold. Gold/Silver ratio at 63.8 \u2014 silver is outperforming, momentum favors silver. Macro regime: NEUTRAL.",
   "moomoo": {
-    "action": "Avoid SLV.",
-    "note": null,
-    "avoid": "Macro and technical signals both negative. Stand aside."
+    "action": "Reduce or avoid SLV.",
+    "note": "Conditions deteriorating. Trim into strength near $65.21.",
+    "avoid": null
   },
   "tf_table": [
     {
       "tf": "daily",
       "ema_stack": "mixed",
-      "rsi": 36.3,
+      "rsi": 35.2,
       "rsi_label": "weak",
       "macd": "bearish",
-      "volume": "normal",
-      "bb_pct": 0.067
+      "volume": "high",
+      "bb_pct": 0.036
     },
     {
       "tf": "4h",
       "ema_stack": "bearish",
-      "rsi": 28.2,
+      "rsi": 26.7,
       "rsi_label": "oversold",
       "macd": "bearish",
       "volume": "high",
@@ -50,61 +50,61 @@
       "rsi": 17.9,
       "rsi_label": "oversold",
       "macd": "bearish",
-      "volume": "low",
-      "bb_pct": 0.0
+      "volume": "normal",
+      "bb_pct": 0.116
     }
   ],
   "signals": {
     "daily": {
-      "close": 62.31999969482422,
-      "ema20": 68.2871,
-      "ema50": 69.356,
-      "ema200": 61.4082,
-      "rsi": 36.3,
+      "close": 61.595001220703125,
+      "ema20": 68.218,
+      "ema50": 69.3276,
+      "ema200": 61.401,
+      "rsi": 35.2,
       "rsi_label": "weak",
       "macd": "bearish",
-      "macd_val": -1.256,
+      "macd_val": -1.3138,
       "ema_stack": "mixed",
-      "volume": "normal",
-      "vol_ratio": 0.93,
-      "bb_pct": 0.067,
-      "atr": 2.5678,
-      "week52_pct": 40.8,
-      "mom_30d": -8.86
+      "volume": "high",
+      "vol_ratio": 1.57,
+      "bb_pct": 0.036,
+      "atr": 2.647,
+      "week52_pct": 39.8,
+      "mom_30d": -9.92
     },
     "4h": {
-      "close": 62.31999969482422,
-      "ema20": 67.5151,
-      "ema50": 68.8413,
-      "ema200": 71.4746,
-      "rsi": 28.2,
+      "close": 61.595001220703125,
+      "ema20": 66.9522,
+      "ema50": 68.5575,
+      "ema200": 71.3764,
+      "rsi": 26.7,
       "rsi_label": "oversold",
       "macd": "bearish",
-      "macd_val": -1.2616,
+      "macd_val": -1.5742,
       "ema_stack": "bearish",
       "volume": "high",
-      "vol_ratio": 2.55,
+      "vol_ratio": 1.41,
       "bb_pct": 0.0,
-      "atr": 1.6889,
-      "week52_pct": 7.7,
-      "mom_30d": -18.65
+      "atr": 1.6417,
+      "week52_pct": 4.0,
+      "mom_30d": -18.41
     },
     "1h": {
-      "close": 62.31999969482422,
-      "ema20": 65.8346,
-      "ema50": 67.069,
-      "ema200": 69.0353,
+      "close": 61.595001220703125,
+      "ema20": 64.512,
+      "ema50": 66.2962,
+      "ema200": 68.7537,
       "rsi": 17.9,
       "rsi_label": "oversold",
       "macd": "bearish",
-      "macd_val": -1.0723,
+      "macd_val": -1.5297,
       "ema_stack": "bearish",
-      "volume": "low",
-      "vol_ratio": 0.54,
-      "bb_pct": 0.0,
-      "atr": 0.9343,
+      "volume": "normal",
+      "vol_ratio": 0.71,
+      "bb_pct": 0.116,
+      "atr": 0.796,
       "week52_pct": 0.0,
-      "mom_30d": -7.32
+      "mom_30d": -9.41
     }
   }
 }
