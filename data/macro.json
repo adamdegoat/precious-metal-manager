@@ -1,7 +1,7 @@
 {
-  "dxy": 99.43,
+  "dxy": 99.42,
   "dxy_trend": "flat",
-  "dxy_10d_chg": 0.24,
+  "dxy_10d_chg": 0.23,
   "tnx": 4.48,
   "tnx_trend": "flat",
   "tlt": 85.5,
@@ -11,9 +11,9 @@
   "vix_trend": "flat",
   "spy_trend": "bullish",
   "spy_price": 757.09,
-  "gold_spot": 4492.7,
-  "silver_spot": 74.135,
-  "gs_ratio": 60.6,
+  "gold_spot": 4466.1,
+  "silver_spot": 72.845,
+  "gs_ratio": 61.3,
   "regime": {
     "label": "RISK-ON",
     "desc": "Low fear, equities bid. Metals lose safe-haven premium. Silver holds on industrial.",
