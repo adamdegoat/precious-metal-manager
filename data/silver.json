@@ -19,7 +19,7 @@
   },
   "verdict": "AVOID",
   "score": -3.1,
-  "summary": "Silver shows a mixed EMA structure \u2014 no clear directional bias yet. RSI at 44.6 \u2014 momentum is neutral. Dollar is broadly flat \u2014 limited macro catalyst from DXY. Gold/Silver ratio at 61.3 \u2014 silver is outperforming, momentum favors silver. Macro regime: RISK-ON.",
+  "summary": "Silver shows a mixed EMA structure \u2014 no clear directional bias yet. RSI at 44.6 \u2014 momentum is neutral. Dollar is broadly flat \u2014 limited macro catalyst from DXY. Gold/Silver ratio at 61.6 \u2014 silver is outperforming, momentum favors silver. Macro regime: RISK-ON.",
   "moomoo": {
     "action": "Avoid SLV.",
     "note": null,
@@ -68,7 +68,7 @@
       "volume": "low",
       "vol_ratio": 0.53,
       "bb_pct": 0.282,
-      "atr": 2.1875,
+      "atr": 2.1888,
       "week52_pct": 48.0,
       "mom_30d": -4.82
     },
