@@ -11,9 +11,9 @@
   "vix_trend": "flat",
   "spy_trend": "mixed",
   "spy_price": 737.55,
-  "gold_spot": 4353.9,
-  "silver_spot": 67.995,
-  "gs_ratio": 64.0,
+  "gold_spot": 4337.1,
+  "silver_spot": 68.943,
+  "gs_ratio": 62.9,
   "regime": {
     "label": "NEUTRAL",
     "desc": "No strong macro catalyst. Technicals and momentum drive near-term price.",

@@ -19,7 +19,7 @@
   },
   "verdict": "REDUCE",
   "score": -1.65,
-  "summary": "Silver shows a mixed EMA structure \u2014 no clear directional bias yet. RSI at 35.2 \u2014 momentum is weak. Dollar is broadly flat \u2014 limited macro catalyst from DXY. 10Y yield at 4.54% \u2014 elevated real rates create competition for gold. Gold/Silver ratio at 64.0 \u2014 silver is outperforming, momentum favors silver. Macro regime: NEUTRAL.",
+  "summary": "Silver shows a mixed EMA structure \u2014 no clear directional bias yet. RSI at 35.2 \u2014 momentum is weak. Dollar is broadly flat \u2014 limited macro catalyst from DXY. 10Y yield at 4.54% \u2014 elevated real rates create competition for gold. Gold/Silver ratio at 62.9 \u2014 silver is outperforming, momentum favors silver. Macro regime: NEUTRAL.",
   "moomoo": {
     "action": "Reduce or avoid SLV.",
     "note": "Conditions deteriorating. Trim into strength near $65.21.",
@@ -66,9 +66,9 @@
       "macd_val": -1.3158,
       "ema_stack": "mixed",
       "volume": "high",
-      "vol_ratio": 1.62,
+      "vol_ratio": 1.67,
       "bb_pct": 0.034,
-      "atr": 2.647,
+      "atr": 2.6463,
       "week52_pct": 39.8,
       "mom_30d": -9.96
     },
